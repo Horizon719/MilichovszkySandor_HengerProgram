@@ -1,1 +1,2 @@
-# MilichovszkySandor_HengerProgram
+# HengerProgram
+## Milichovszky Sándor
