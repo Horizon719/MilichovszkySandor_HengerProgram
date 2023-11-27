@@ -12,8 +12,8 @@ public class TomorHenger extends Henger{
         this.fajSuly = fajSuly;
     }
 
-    public void setFajSuly(double fajSuly) {
-        this.fajSuly = fajSuly;
+    public double getFajSuly() {
+        return fajSuly;
     }
     
     public double suly(){
