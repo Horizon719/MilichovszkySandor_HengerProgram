@@ -18,12 +18,10 @@ public class FaIdomok {
     }
 
     public void run() {
-        this.idomok.add(new Gomb(2));
-        this.idomok.add(new Gomb(3));
-        this.idomok.add(new Gomb(5.5));
-        this.idomok.add(new Hasab(2, 3, 4));
-        this.idomok.add(new Hasab(5, 5.5, 10));
-        this.idomok.add(new Hasab(2.2, 1, 0.5));
+        this.idomok.add(new Gomb(1.0));
+        this.idomok.add(new Hasab(1.0, 1.0, 1.0));
+        this.idomok.add(new Hasab(2.0, 2.0, 2.0));
+        this.idomok.add(new Gomb(2.0));
         
         for (FaIdom faIdom : idomok) {
             System.out.println(faIdom.toString());
@@ -31,8 +29,10 @@ public class FaIdomok {
         
         System.out.printf("Az összes idom súlya: %f\n", osszSuly());
         System.out.printf("Az összes gömb súlya: %f\n", osszGombSuly());
-        System.out.printf("A minimum térfogat: %s\n", minV());
-        System.out.printf("A maximum térfogat: %s\n", maxV());
+        System.out.printf("MinV: %s, típusa: %s\n", minV(), minV().getClass().getSimpleName());
+        System.out.printf("");
+        System.out.printf("MaxV: %s, típusa: %s\n", maxV(), maxV().getClass().getSimpleName());
+        System.out.printf("");
     }
     
     public double osszSuly(){
